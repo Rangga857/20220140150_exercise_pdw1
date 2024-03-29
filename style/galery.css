@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    background-color: #ffffff;
+    /* Warna latar belakang header */
+    border-bottom: 2px solid #000000;
+    /* Garis hitam di bagian bawah header */
+    padding: 20px;
+    /* Padding di dalam header */
+    display: flex;
+    justify-content: space-between;
+    /* Membuat logo dan navbar berada di dua sisi */
+    align-items: center;
+    /* Pusatkan elemen secara vertikal */
+}
+
+.logo img {
+    height: 100px;
+    /* Ukuran gambar logo diperbesar */
+}
+
+.navbar {
+    flex-grow: 1;
+    /* Biarkan menu navigasi memperluas ruang tersedia */
+    text-align: center;
+    /* Pusatkan menu navigasi secara horizontal */
+}
+
+.navbar ul {
+    list-style-type: none;
+    /* Hapus bullet list */
+    margin: 0;
+    /* Hapus margin */
+    padding: 0;
+    /* Hapus padding */
+    display: inline-block;
+    /* Mengubah daftar menjadi inline-block */
+}
+
+.navbar li {
+    display: inline-block;
+    /* Mengubah setiap elemen daftar menjadi inline-block */
+    margin-left: 20px;
+    /* Jarak antara setiap elemen navbar */
+}
+
+.navbar a {
+    text-decoration: none;
+    /* Hapus dekorasi link */
+    color: #000000;
+    /* Warna teks navbar */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    /* Tambahkan garis bawah saat hover pada link */
+}
+
+h1 {
+    margin-bottom: 20px;
+    /* Jarak antara judul dan galeri */
+    font-size: 36px;
+    /* Ukuran font judul */
+    color: #333;
+    /* Warna teks */
+    text-transform: uppercase;
+    /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 2px;
+    /* Jarak antar huruf */
+    position: relative;
+    /* Menjadikan posisi relatif untuk konten h1 */
+    padding: 10px 20px;
+    /* Sesuaikan padding sesuai kebutuhan */
+}
+
+h1::before {
+    content: '';
+    /* Memastikan konten kosong */
+    position: absolute;
+    /* Menjadikan posisi absolut */
+    top: 5%;
+    /* Menempatkan di tengah vertikal */
+    left: 0;
+    /* Menempatkan di sisi kiri */
+    width: 100%;
+    /* Mengisi lebar dari kiri ke kanan */
+    height: 100%;
+    /* Mengisi tinggi dari atas ke bawah */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Warna latar belakang transparan */
+    z-index: -1;
+    /* Mengatur ke lapisan belakang */
+}
+
+.project-description {
+    margin-bottom: 20px;
+    /* Jarak antara deskripsi proyek dan galeri */
+    font-size: 18px;
+    /* Ukuran font deskripsi */
+    color: #666;
+    /* Warna teks */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Transparansi latar belakang deskripsi */
+    padding: 10px;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    /* Melengkungkan sudut bawah */
+    box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.1);
+    /* Memberikan efek bayangan */
+    text-align: center;
+}
+
+.description h3 {
+    margin: 5px 0;
+    /* Memberi jarak atas dan bawah untuk judul */
+}
+
+.description p {
+    margin: 5px 0;
+    /* Memberi jarak atas dan bawah untuk deskripsi */
+}
+
+.decoration-types {
+    margin-top: 50px;
+    /* Atur jarak atas dari konten sebelumnya */
+}
+
+.decoration-types h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.type.dekorasi {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.type.dekorasi h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    width: 300px;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.type.dekorasi h3 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.type.dekorasi h3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, )
+}
+
+.rules-and-ketentuan {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    /* Ubah warna latar belakang */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rules-and-ketentuan h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rules-and-ketentuan p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.rules-and-ketentuan p:last-child {
+    margin-bottom: 0;
+}
+
+.footer {
+    background-color: #333;
+    /* Warna latar belakang footer */
+    color: #fff;
+    /* Warna teks footer */
+    padding: 50px 20px;
+    /* Padding di bagian atas dan bawah */
+    text-align: center;
+    /* Pusatkan teks */
+}
+
+.footer h2 {
+    font-size: 24px;
+    /* Ukuran font judul */
+    margin-bottom: 20px;
+    /* Jarak bawah judul */
+}
+
+.footer p {
+    font-size: 16px;
+    /* Ukuran font teks */
+    margin-bottom: 20px;
+    /* Jarak bawah teks */
+}
+
+.footer ul {
+    list-style-type: none;
+    /* Hapus bullet list */
+    padding: 0;
+    /* Hapus padding */
+}
+
+.footer li {
+    margin-bottom: 10px;
+    /* Jarak bawah setiap item list */
+}
+
+.footer li:last-child {
+    margin-bottom: 0;
+    /* Hapus margin bawah untuk item terakhir */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    /* Hapus garis bawah pada link */
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    /* Tambahkan garis bawah saat hover pada link */
+}
